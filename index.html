@@ -3,41 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q20 - Guessing Game</title>
+    <title>Q20 Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Q20 - Guessing Game</h1>
-    </header>
-
-    <main>
-        <section id="question-section">
-            <h2>Think of something...</h2>
-            <p>I'll try to guess what it is in 20 questions!</p>
-            <button id="start-game">Start</button>
-        </section>
-
-        <section id="game-section" class="hidden">
-            <h2 id="question-text"></h2>
-            <div id="answers">
-                <button onclick="answer('yes')">Yes</button>
-                <button onclick="answer('no')">No</button>
-                <button onclick="answer('maybe')">Maybe</button>
-                <button onclick="answer('unknown')">I don't know</button>
+    <div class="container">
+        <div class="circle">
+            <div class="screen">
+                <h1 id="question-text">Think of something...</h1>
             </div>
-        </section>
-
-        <section id="result-section" class="hidden">
-            <h2 id="result-text"></h2>
-            <button onclick="restartGame()">Play Again</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Q20 Game. All rights reserved.</p>
-    </footer>
-
+            <div class="buttons">
+                <button class="btn" onclick="answer('yes')">Yes</button>
+                <button class="btn" onclick="answer('no')">No</button>
+                <button class="btn" onclick="answer('unknown')">I Don't Know</button>
+                <button class="btn" onclick="answer('maybe')">Maybe</button>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
