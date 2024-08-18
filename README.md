@@ -2,4 +2,9 @@ This is a copy of the 1988 toy Q20 that attempts to quiz you what are you thinki
 
 to experience this game pls go to the website:
 
-https://github.com/Apatoma/Q20-game-web
+
+https://apatoma.github.io/Q20-game-web/
+
+
+
+
